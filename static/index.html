@@ -34,6 +34,10 @@
           height: 25px;
       }
 
+      .manage-panel-pseudo-button {
+          flex-grow: 100;
+      }
+
       .manage-panel-button-icon {
           color: white;
           font-size: 20px;
@@ -75,7 +79,10 @@
     <button class="js-mute-button manage-panel-button" hidden>
       <i class="fa-solid fa-volume-high manage-panel-button-icon"></i>
     </button>
-    <button class="js-fullscreen-button">Fullscreen</button>
+    <div class="manage-panel-pseudo-button"></div>
+    <button class="js-fullscreen-button manage-panel-button">
+      <i class="fa-solid fa-expand manage-panel-button-icon"></i>
+    </button>
   </div>
   <div class="time-panel">
     <span class="js-current-time"></span>
