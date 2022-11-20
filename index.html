@@ -35,13 +35,17 @@
           border: 0;
           cursor: pointer;
           background-color: transparent;
-          padding: 0 10px;
-          margin: 0 10px;
-          width: 25px;
-          height: 25px;
+          padding: 0 0;
+          margin: 0 10px 0 0;
+          width: 30px;
+          height: 30px;
           color: white;
           font-size: 20px;
           line-height: 20px;
+      }
+
+      .play-button, .pause-button {
+          margin: 0 10px;
       }
 
       .manage-panel-wrapper {
@@ -64,6 +68,7 @@
           background-color: red;
       }
 
+
   </style>
 </head>
 <body>
@@ -72,10 +77,10 @@
   <div class="js-video-container video-panel"></div>
 
   <div class="manage-panel">
-    <button class="js-play-button manage-panel-button">
+    <button class="js-play-button play-button manage-panel-button">
       <i class="fa-solid fa-play"></i>
     </button>
-    <button class="js-pause-button manage-panel-button" hidden>
+    <button class="js-pause-button pause-button manage-panel-button" hidden>
       <i class="fa-solid fa-pause"></i>
     </button>
     <button class="js-volume-button manage-panel-button">
@@ -89,15 +94,15 @@
       <i class="fa-solid fa-expand"></i>
     </button>
   </div>
-  <div class="time-panel">
-    <span class="js-current-time"></span>
-    —
-    <span class="js-duration"></span>
-  </div>
+  <!--  <div class="time-panel">-->
+  <!--    <span class="js-current-time"></span>-->
+  <!--    —-->
+  <!--    <span class="js-duration"></span>-->
+  <!--  </div>-->
 
-  <div class="js-progress progress-panel">
-    <div class="js-progress-slider progress-panel-slider">Прогресс</div>
-  </div>
+  <!--  <div class="js-progress progress-panel">-->
+  <!--    <div class="js-progress-slider progress-panel-slider">Прогресс</div>-->
+  <!--  </div>-->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -109,6 +114,7 @@
         elementId: 'player',
         src: 'https://dvmn.org/media/filer_public/d0/16/d016d9b8-4180-4bb9-ad83-0241f61627b8/samsung_demo_-_alive_in_color.mp4',
     });
+
 
 </script>
 
