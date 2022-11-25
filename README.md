@@ -2,7 +2,7 @@
 
 This code is the simple video player.
 
-The source of js code of player is [this repo](https://github.com/devmanorg/video-player-jslib).
+Sources and instructions for the js code of the player [are there](https://github.com/devmanorg/video-player-jslib).
     
 ### How to use
 
