@@ -61,17 +61,30 @@
           display: flex;
           flex-grow: 1;
           background-color: grey;
+          margin: 7px 12px;
+          height: 5px;
+          border-radius: 5px;
+          align-items: center;
       }
 
       .progress-panel-slider {
-          background-color: red;
+          background-color: #f8104d;
+          border-radius: 5px;
       }
 
-
-
-
-
-  </style>
+      .slider {
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          display: inline-block;
+          background-color: #f8104d;
+          border-style: solid;
+          border-width: 3px;
+          border-color: white;
+          box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+          margin: 0 -6px;
+      }
+</style>
 </head>
 <body>
 <div id="player" class="player">
@@ -95,7 +108,8 @@
       <div class="time-panel">
         <span class="js-current-time"></span>
         <div class="js-progress progress-panel">
-          <div class="js-progress-slider progress-panel-slider">Прогресс</div>
+          <div class="js-progress-slider progress-panel-slider"></div>
+          <span class="slider"></span>
         </div>
         <span class="js-duration"></span>
       </div>
