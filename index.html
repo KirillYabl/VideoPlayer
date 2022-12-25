@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
   <style type="text/css">
       .player {
           font-family: 'Roboto', sans-serif;
@@ -44,6 +45,10 @@
           height: 32px;
           width: 38px;
           margin: 5px 0;
+      }
+
+      .manage-panel-button:focus {
+          border: 0;
       }
 
       .manage-panel-wrapper {
@@ -83,14 +88,14 @@
           border-color: white;
           box-shadow: 0 0 5px rgba(0, 0, 0, .5);
           margin: 0 -6px;
-          opacity: 1;
+          opacity: 0;
           transition-property: opacity;
           transition-duration: .3s;
           transition-timing-function: ease-in-out;
       }
 
       .manage-panel:hover .slider {
-          opacity: 0;
+          opacity: 1;
       }
 </style>
 </head>
